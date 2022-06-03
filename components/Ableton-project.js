@@ -20,12 +20,13 @@ const AbletonProject = () => {
       </div>
       <div className='card__description flow-spacer'>
         <p>
-          This is a copy of Ableton's about page using only HTML, CSS and
+          This is a copy of Ableton&apos;s about page using only HTML, CSS and
           vanilla JS.
           <a
             className='link--block'
             href='https://www.ableton.com/en/about/'
             target='_blank'
+            rel='noreferrer'
           >
             Link to original
             <span className='visually-hidden'>Ableton </span> page
@@ -34,6 +35,7 @@ const AbletonProject = () => {
             className='link--block'
             href='https://ableton-about-page.netlify.app/'
             target='_blank'
+            rel='noreferrer'
           >
             View hosted copy
             <span className='visually-hidden'>of Ableton about web page</span>
@@ -61,7 +63,9 @@ const AbletonProject = () => {
                 Skip to content button (10+ tabs before you skip the navigation
                 links)
               </li>
-              <li>Hover state on links (doesn't exist on original page)</li>
+              <li>
+                Hover state on links (doesn&apos;t exist on original page)
+              </li>
               <li>Added alt text to images</li>
               <li>Bumped up the outline on focus</li>
             </ul>
