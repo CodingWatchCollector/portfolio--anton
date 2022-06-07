@@ -475,27 +475,92 @@ div[class*='about-me'] + div[class*='about-me'] {
 /* ChezMman dark mode toggle */
 .card__title {
   position: relative;
+  z-index: 1;
+  background-color: hsl(var(--bg--main));
+  background-color: red;
 }
 
 .scheme-toggle-button {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, 50%);
-  width: 2em;
-  height: 2em;
-  line-height: inherit;
-  padding: 0;
-  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  top: -1rem;
+  border: 1px solid hsl(var(--clr--accent-400) / 0.6);
+  min-width: 3rem;
+  min-height: 2rem;
+  padding: 0 0.35rem;
+  border-radius: 2rem;
 }
 
 .scheme-toggle-button::before {
-}
-
-.scheme-toggle-button[aria-pressed='false']::before {
   content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1.75rem;
+  /* ??? opacity or no?? */
+  background-color: hsl(var(--clr--accent-400) / 0.6);
+  border-radius: 50%;
+  transition: transform var(--transition-duration) ease-out;
 }
 
 .scheme-toggle-button[aria-pressed='true']::before {
+  transform: translate(1.95rem, 0);
+}
+
+.bear {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 1.5rem;
+  z-index: -1;
+  transform: translateY(0%);
+  transition: transform 500ms ease-out;
+  transform-origin: bottom;
+}
+
+.scheme-toggle-button:focus .bear {
+  transform: translateY(-100%);
+}
+
+@keyframes bear__arm--from-right {
+  0% {
+    transform: translateX(0) rotateX(180deg);
+  }
+  50% {
+    transform: translateX(1.25rem) rotateX(180deg);
+  }
+
+  100% {
+    transform: translateX(1.25rem) rotateX(180deg) scaleX(0.7);
+  }
+}
+
+.bear__arm {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 1.5rem;
+  z-index: -1;
+  transform-origin: bottom;
+}
+
+.scheme-toggle-button[aria-pressed='true'] .bear__arm {
+  animation: bear__arm--from-left 500ms alternate 2;
+}
+.scheme-toggle-button[aria-pressed='false'] .bear__arm {
+  animation: bear__arm--from-right 500ms alternate 2;
+}
+
+.card__title:hover #bear__arm--paw {
+}
+
+.card__title:hover .bear__arm::after {
+  content: '';
+  outline: 1px solid blue;
+  width: 0.5rem;
+  height: 100%;
 }
