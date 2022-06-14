@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@300;400;700&family=Permanent+Marker&family=Stint+Ultra+Condensed&display=swap');
+/*  */
 
 :root {
   --ff-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   --ff-headings: 'Stint Ultra Condensed', cursive;
+  --ff-handwriting: 'Gloria Hallelujah', cursive;
+
   /* mobile font-size  */
   --fs-300: 0.875rem;
   --fs-400: 1rem;
@@ -141,8 +144,9 @@ a {
   text-decoration: none;
   background-image: linear-gradient(
     to right,
-    hsl(183deg 79% 36%),
-    hsl(183deg 79% 36%)
+    hsl(var(--clr--accent-400)) 34%,
+    hsl(var(--clr--accent-400) / 0.3) 50%,
+    hsl(var(--clr--accent-400))
   );
   background-size: 100% 0.1em;
   background-repeat: no-repeat;
@@ -224,9 +228,9 @@ button,
   background: linear-gradient(hsl(var(--bg--main)), hsl(var(--bg--main)))
       padding-box,
     linear-gradient(
-        to bottom right,
+        25deg,
         hsl(var(--clr--accent-400)) 34%,
-        blue 50%,
+        hsl(var(--clr--accent-400) / 0.3) 50%,
         hsl(var(--clr--accent-400))
       )
       border-box;
@@ -356,7 +360,7 @@ h3 {
 }
 
 .card__title {
-  font-family: cursive;
+  font-family: var(--ff-handwriting);
 }
 
 .card details summary {
@@ -448,26 +452,36 @@ div[class*='about-me'] + div[class*='about-me'] {
 }
 
 .polaroid-frame {
+  background-color: hsl(0, 0%, 95.7%);
   position: relative;
-  padding: 0.5rem;
-  padding: clamp(0.5rem, 3vw, 1.5rem);
-  padding-bottom: 0;
-  box-shadow: 2px 2px 9px 0 hsl(var(--clr--main-400) / 0.2);
+  padding: 1rem 0.5rem 0 0.5rem;
+  padding: clamp(1rem, 6vw, 3rem) clamp(0.5rem, 3vw, 1.5rem) 0
+    clamp(0.5rem, 3vw, 1.5rem);
+  box-shadow: 2px 2px 9px 1px hsl(var(--clr--main-400) / 0.2);
 }
 
 .card__photo-wrapper {
+  position: relative;
   overflow-y: auto;
   max-height: 35rem;
   /* max-height: min(20rem, 50vh); */
-  box-shadow: 0 0 6px -1px hsl(var(--clr--main-400) / 0.2);
   width: 100%;
   aspect-ratio: 1 / 1;
+}
+
+.polaroid-frame--shadow-inside {
+  box-shadow: inset 0 0 4px 1px hsl(var(--clr--main-400) / 0.2);
+  position: absolute;
+  inset: clamp(1rem, 6vw, 3rem) clamp(0.5rem, 3vw, 1.5rem) min(18vw, 9rem)
+    clamp(0.5rem, 3vw, 1.5rem);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .card__title {
   display: grid;
   place-items: center;
-  min-height: min(16.5vw, 8.25rem);
+  min-height: min(18vw, 9rem);
 }
 
 .card details summary {
@@ -492,7 +506,6 @@ div[class*='about-me'] + div[class*='about-me'] {
 .card__title {
   position: relative;
   z-index: 1;
-  background-color: hsl(var(--bg--main));
 }
 
 .scheme-toggle-button {
