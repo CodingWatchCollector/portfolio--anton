@@ -26,7 +26,7 @@ const ChezMmanProject = () => {
 
   return (
     <div className='card grid grid--3-col gap'>
-      <div className='polaroid-frame scotch-tape-on-sides grid--span-2'>
+      <div className='polaroid-frame grid--span-2'>
         <div className='polaroid-frame--shadow-inside'></div>
         <div className='card__photo-wrapper'>
           <ChezMmanImage darkMode={darkMode} />
@@ -161,8 +161,8 @@ const ChezMmanProject = () => {
       <div className='card__description flow-spacer'>
         <p>
           This is a web page I&apos;ve made for the restaurant where I work.
-          It&apos;s a lightweight website with the menu and drink list and it
-          should replace the paper menu.
+          It&apos;s a lightweight website with the menu and drink list and is
+          easy to update with CMS.
           <a
             className='link--block'
             href='https://chez-mman.netlify.app/'
@@ -183,7 +183,7 @@ const ChezMmanProject = () => {
         <div className='expandable flow-spacer spacer-xs'>
           <ul className='expandable__list'>
             <h4>Main reasons to start this project:</h4>
-            <li>Make usefull real world project</li>
+            <li>Make useful real world project</li>
             <li>Solidify my CSS knowledge</li>
             <li>
               Build a nice looking webpage (that&apos;s what my mum says)
@@ -194,26 +194,26 @@ const ChezMmanProject = () => {
             </li>
           </ul>
           <ul className='expandable__list'>
-            <h4>My personal touch and some fixes of the original page:</h4>
-            <li>
-              Fix heading hierarchy of the original page where every section has
-              a H1(what?!)
-            </li>
-            <li>
-              Skip to content button (10+ tabs before you skip the navigation
-              links)
-            </li>
-            <li>Hover state on links (doesn&apos;t exist on original page)</li>
-            <li>Added alt text to images</li>
-            <li>Bumped up the outline on focus</li>
-          </ul>
-          <ul className='expandable__list'>
             <h4>What i have learned in process:</h4>
             <li>
               wcag recommendations on buttons(switch buttons in particular)
             </li>
-            <li>switch buttons</li>
-            <li>sd</li>
+            <li>
+              How to use third party libraries, but also concerns, bugs and
+              issues related to it.{' '}
+            </li>
+            <li>How to use CMS and Figma</li>
+            <li>
+              How to use version control and more importantly why to do this
+            </li>
+            <li>
+              It&apos;s important to gather feedback from users and improve
+              their experience.
+            </li>
+            <li>
+              How to make a major update and do not break the code (I redesigned
+              the website and changed some core features).
+            </li>
           </ul>
         </div>
       </details>

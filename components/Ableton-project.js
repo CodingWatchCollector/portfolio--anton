@@ -5,7 +5,7 @@ import imageAbletonFullpage from '../public/ableton--fullpage.png'
 const AbletonProject = () => {
   return (
     <div className='card grid grid--3-col gap'>
-      <div className='polaroid-frame scotch-tape-on-sides grid--span-2'>
+      <div className='polaroid-frame grid--span-2'>
         <div className='polaroid-frame--shadow-inside'></div>
 
         <div className='card__photo-wrapper'>
