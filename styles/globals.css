@@ -238,11 +238,7 @@ button,
 .button-style {
   background-color: hsl(var(--bg--main));
   padding: 0.25em 1.25em;
-  background: linear-gradient(hsl(var(--bg--main)), hsl(var(--bg--main)))
-      padding-box,
-    linear-gradient(25deg, var(--gradient--clr--accent--faded)) border-box;
-  border: 0.1em inset transparent;
-  border-width: 0.15em 0.2em 1px 1px;
+  border: 0.1em solid hsl(var(--clr--accent-400));
   border-radius: 61% 39% 72% 28% / 52% 53% 47% 48%;
   transition: box-shadow var(--transition-duration--quick) ease-in;
 }
