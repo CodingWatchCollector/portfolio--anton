@@ -10,7 +10,6 @@ const ChezMmanImage = ({ darkMode }) => {
       className='card__photo'
       placeholder='blur'
       layout='intrinsic'
-      priority
       alt="Chez M'man in dark mode website preview"
     />
   ) : (
@@ -18,7 +17,6 @@ const ChezMmanImage = ({ darkMode }) => {
       src={imageChezMmanLight}
       className='card__photo'
       placeholder='blur'
-      priority
       layout='intrinsic'
       alt="Chez M'man in light mode website preview"
     />

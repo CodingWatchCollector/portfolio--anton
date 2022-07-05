@@ -25,7 +25,7 @@ const ChezMmanProject = () => {
   }
 
   return (
-    <div className='card grid grid--3-col gap'>
+    <div className='chez-mman card grid grid--3-col gap'>
       <div className='polaroid-frame grid--span-2'>
         <div className='polaroid-frame--shadow-inside'></div>
         <div className='card__photo-wrapper'>
@@ -171,6 +171,15 @@ const ChezMmanProject = () => {
           >
             View
             <span className='visually-hidden'>Chez M&apos;man</span> hosted page
+          </a>
+          <a
+            className='link--block'
+            href='https://github.com/CodingWatchCollector/chez-mman-qr-code'
+            target='_blank'
+            rel='noreferrer'
+          >
+            View
+            <span className='visually-hidden'>Chez M&apos;man</span> on Github
           </a>
         </p>
       </div>

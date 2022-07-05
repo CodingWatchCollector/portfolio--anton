@@ -6,8 +6,10 @@ const age = today.getFullYear() - 1993
 
 const Frontpage = () => {
   return (
-    <article className='frontpage flow-spacer'>
-      <h2 className='text-highlighted text-highlighted--short'>Our hero</h2>
+    <article className='frontpage flow-spacer spacer-xl'>
+      <h2 className='text-highlight-border text-highlight-border--short'>
+        Our hero
+      </h2>
       <div className='hero-wrapper grid gap grid--3-col'>
         <div className='bio-wrapper flow-spacer'>
           <div className='portrait-wrapper noise-border grid--span-2'>
@@ -29,9 +31,19 @@ const Frontpage = () => {
               revolutionsAroundTheSun (aka years):{' '}
               <span className='cursive'>{age}</span>
             </p>
+            <p className='bio__github'>
+              githubLink:{' '}
+              <a
+                href='https://github.com/CodingWatchCollector'
+                className='cursive'
+              >
+                {' '}
+                CodingWatchCollector
+              </a>
+            </p>
           </div>
           <div className='about-me--primary'>
-            <span className='about-me--primary__title'>
+            <span className='about-me--primary__title text-highlight'>
               Some blah-blah about me:
             </span>
             <span>
@@ -58,43 +70,59 @@ const Frontpage = () => {
           </div>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'>Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            Random fact:
+          </span>{' '}
           <span className=''>
             I know every local dish from Lyon (thanks to work at local
             restaurant for 6 years)
           </span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'>Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            Random fact:
+          </span>{' '}
           <span className=''>
             I want to dive in the world of web development
           </span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'>Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            Random fact:
+          </span>{' '}
           <span className=''>
             I have decent knowledge about accessibility, Core Web Vitals, but no
             so much about security and SEO (but i would love to learn more!)
           </span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'>Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            Random fact:
+          </span>{' '}
           <span className=''>
             I speak french, ukrainian, russian and english
           </span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'>Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            Random fact:
+          </span>{' '}
           <span className=''>
             I have more watches than T-shirts, hence the nickname on github
           </span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'> Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            {' '}
+            Random fact:
+          </span>{' '}
           <span className=''>I wear cape at home</span>
         </div>
         <div className='about-me--secondary noise-border'>
-          <span className='about-me--secondary__title'> Random fact:</span>{' '}
+          <span className='about-me--secondary__title text-highlight'>
+            {' '}
+            Random fact:
+          </span>{' '}
           <span className=''>SVG filters are cool, right?</span>
         </div>
       </div>

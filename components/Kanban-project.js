@@ -1,37 +1,58 @@
 import Image from 'next/image'
+// TODO: change links, alt text, visible hidden info
+// change info about project
+//
 
-import imageAbletonFullpage from '../public/ableton--fullpage.png'
+import KanbanExample from '../public/kanban-example.jpg'
 
-const AbletonProject = () => {
+const KanbanProject = () => {
   return (
-    <div className='ableton card grid grid--3-col gap'>
+    <div className='kanban card grid grid--3-col gap'>
       <div className='polaroid-frame grid--span-2'>
         <div className='polaroid-frame--shadow-inside'></div>
+        <div className='polaroid-frame--work-in-progress'>
+          <div className='line-wrapper'>
+            <div className='moving-text first' aria-hidden='true'>
+              work in progress
+            </div>
+            <div className='moving-text second' aria-hidden='true'>
+              work in progress
+            </div>
+            <div className='moving-text third' aria-hidden='true'>
+              work in progress
+            </div>
+          </div>
+        </div>
 
         <div className='card__photo-wrapper'>
           <Image
-            src={imageAbletonFullpage}
+            src={KanbanExample}
             className='card__photo'
             placeholder='blur'
-            layout='intrinsic'
-            priority
-            alt='Ableton about page preview'
+            layout='fill'
+            alt='Kanban desk website example'
           />
         </div>
-        <h3 className='card__title'>Ableton about page</h3>
+        <h3 className='card__title'>
+          <span className='visually-hidden'>My current project: </span>
+          Kanban desk website
+        </h3>
       </div>
       <div className='card__description flow-spacer'>
         <p>
-          This is a copy of Ableton&apos;s about page using only HTML, CSS and
-          vanilla JS.
+          This is my current project - Kanban task management website - that
+          will help me reinforce my JS and CSS knowledge, state management, use
+          of local storage and/or databases, etc...
           <a
             className='link--block'
-            href='https://www.ableton.com/en/about/'
+            href='https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB'
             target='_blank'
             rel='noreferrer'
           >
-            Link to original
-            <span className='visually-hidden'>Ableton </span> page
+            Main inspiration source{' '}
+            <span className='visually-hidden'>
+              for my Kanban task management website
+            </span>
           </a>
           <a
             className='link--block'
@@ -39,21 +60,12 @@ const AbletonProject = () => {
             target='_blank'
             rel='noreferrer'
           >
-            View hosted copy
-            <span className='visually-hidden'>of Ableton about web page</span>
-          </a>
-          <a
-            className='link--block'
-            href='https://github.com/CodingWatchCollector/ableton-about--no-framework'
-            target='_blank'
-            rel='noreferrer'
-          >
-            View
-            <span className='visually-hidden'>Ableton project</span> on Github
+            View current progress
+            <span className='visually-hidden'>of Kanban desk website</span>
           </a>
         </p>
-        <details className='flow-spacer spacer-xs'>
-          <summary className='button-style'>
+        {/* <details className='flow-spacer spacer-xs'> */}
+        {/* <summary className='button-style'>
             Details
             <span className='visually-hidden'>on Ableton project</span>
           </summary>
@@ -80,11 +92,11 @@ const AbletonProject = () => {
               <li>Added alt text to images</li>
               <li>Bumped up the outline on focus</li>
             </ul>
-          </div>
-        </details>
+          </div> */}
+        {/* </details> */}
       </div>
     </div>
   )
 }
 
-export default AbletonProject
+export default KanbanProject
