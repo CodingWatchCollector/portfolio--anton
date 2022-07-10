@@ -7,8 +7,8 @@ import KanbanExample from '../public/kanban-example.jpg'
 
 const KanbanProject = () => {
   return (
-    <div className='kanban card grid grid--3-col gap'>
-      <div className='polaroid-frame grid--span-2'>
+    <div className='kanban card grid gap'>
+      <div className='polaroid-frame'>
         <div className='polaroid-frame--shadow-inside'></div>
         <div className='polaroid-frame--work-in-progress'>
           <div className='line-wrapper'>
@@ -29,16 +29,15 @@ const KanbanProject = () => {
             src={KanbanExample}
             className='card__photo'
             placeholder='blur'
-            layout='fill'
+            layout='intrinsic'
             alt='Kanban desk website example'
+            objectFit='cover'
+            objectPosition='left top'
           />
         </div>
-        <h3 className='card__title'>
-          <span className='visually-hidden'>My current project: </span>
-          Kanban desk website
-        </h3>
+        <h3 className='card__title'>Kanban desk website</h3>
       </div>
-      <div className='card__description flow-spacer'>
+      <div className='card__description text-max-length flow-spacer spacer-xs'>
         <p>
           This is my current project - Kanban task management website - that
           will help me reinforce my JS and CSS knowledge, state management, use
@@ -56,44 +55,16 @@ const KanbanProject = () => {
           </a>
           <a
             className='link--block'
-            href='https://ableton-about-page.netlify.app/'
+            href='https://github.com/CodingWatchCollector/kanban-task-manager'
             target='_blank'
             rel='noreferrer'
           >
             View current progress
-            <span className='visually-hidden'>of Kanban desk website</span>
+            <span className='visually-hidden'>
+              of my Kanban task management website
+            </span>
           </a>
         </p>
-        {/* <details className='flow-spacer spacer-xs'> */}
-        {/* <summary className='button-style'>
-            Details
-            <span className='visually-hidden'>on Ableton project</span>
-          </summary>
-          <div className='expandable flow-spacer spacer-xs'>
-            <ul className='expandable__list'>
-              <h4>Main reasons to copy this page:</h4>
-              <li>Solidify my CSS Grid knowledge</li>
-              <li>Build a complex page using WCAG recommendations</li>
-              <li>I like the design and I wanted to recreate it</li>
-            </ul>
-            <ul className='expandable__list'>
-              <h4>My personal touch and some fixes of the original page:</h4>
-              <li>
-                Fix heading hierarchy of the original page where every section
-                has a H1(what?!)
-              </li>
-              <li>
-                Skip to content button (10+ tabs before you skip the navigation
-                links)
-              </li>
-              <li>
-                Hover state on links (doesn&apos;t exist on original page)
-              </li>
-              <li>Added alt text to images</li>
-              <li>Bumped up the outline on focus</li>
-            </ul>
-          </div> */}
-        {/* </details> */}
       </div>
     </div>
   )

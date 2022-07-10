@@ -4,9 +4,9 @@ import KanbanProject from './Kanban-project'
 
 const Projects = () => {
   return (
-    <article className='projects flow-spacer spacer-xl'>
+    <article className='projects flow-spacer'>
       <h2 className='text-highlight-border'>My projects/work</h2>
-      <div className='cards-wrapper grid gap-xl'>
+      <div className='cards-wrapper flow-spacer'>
         <AbletonProject />
         <ChezMmanProject />
         <KanbanProject />
