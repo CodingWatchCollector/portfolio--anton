@@ -4,13 +4,11 @@ import FactText from './FactText'
 import FACTS from './FACTS'
 
 const RadioButtonsContainer = ({ currentValue, setValue }) => {
-  const handleRadioChange = e => {
-    setValue(e.target.value)
-  }
-
-  const keysFromFACTS = Object.keys(FACTS)
-
   const radioButtons = useMemo(() => {
+    const keysFromFACTS = Object.keys(FACTS)
+    const handleRadioChange = e => {
+      setValue(e.target.value)
+    }
     return keysFromFACTS.map(key => {
       return (
         <RandomFactRadio
@@ -21,7 +19,7 @@ const RadioButtonsContainer = ({ currentValue, setValue }) => {
         />
       )
     })
-  }, [keysFromFACTS, handleRadioChange])
+  }, [setValue])
 
   return (
     <div className='facts__buttons-wrapper'>

@@ -3,9 +3,8 @@ import RandomFactLabel from './RandomFactLabel'
 import FACTS from './FACTS'
 
 const RadioLabelsContainer = ({ activeButtonValue }) => {
-  const keysFromFACTS = Object.keys(FACTS)
-
   const labels = useMemo(() => {
+    const keysFromFACTS = Object.keys(FACTS)
     return keysFromFACTS.map((key, i) => {
       return (
         <RandomFactLabel
@@ -16,7 +15,7 @@ const RadioLabelsContainer = ({ activeButtonValue }) => {
         />
       )
     })
-  }, [keysFromFACTS, activeButtonValue])
+  }, [activeButtonValue])
 
   return <>{labels}</>
 }
