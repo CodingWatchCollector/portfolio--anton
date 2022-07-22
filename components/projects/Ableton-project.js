@@ -1,26 +1,25 @@
 import Image from 'next/image'
 
-import imageAbletonFullpage from '../public/ableton--fullpage.png'
+import imageAbletonFullpage from '../../public/ableton-full.png'
 
 const AbletonProject = () => {
   return (
     <div className='ableton card grid gap'>
-      <div className='photo-and-title-wrapper'>
-        <div className=' noise-border'>
-          <div className='card__photo-wrapper'>
-            <Image
-              src={imageAbletonFullpage}
-              className='card__photo'
-              placeholder='blur'
-              layout='responsive'
-              priority
-              alt='Ableton about page preview'
-            />
-          </div>
+      <div className='photo-and-button-wrapper'>
+        <div className='card__photo-wrapper'>
+          <Image
+            src={imageAbletonFullpage}
+            className='card__photo'
+            placeholder='blur'
+            layout='responsive'
+            priority
+            alt='Ableton about page preview'
+          />
         </div>
-        <h3 className='card__title'>Ableton about page</h3>
       </div>
-      <div className='card__description text-max-length flow-spacer spacer-xs'>
+
+      <div className='card__description flow-spacer spacer-xs'>
+        <h3 className='card__title'>Ableton about page</h3>
         <p>
           This is a copy of Ableton&apos;s about page using only HTML, CSS and
           vanilla JS.

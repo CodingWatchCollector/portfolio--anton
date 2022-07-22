@@ -1,5 +1,5 @@
-import usePrefersReducedMotion from './usePrefersReducedMotion'
-import Bear from '../public/svg/bear.js'
+import usePrefersReducedMotion from '../usePrefersReducedMotion'
+import Bear from '../../public/svg/bear.js'
 
 const SwitchButtonWithBear = ({ toggleState, setToggleState }) => {
   const noAnimation = usePrefersReducedMotion()

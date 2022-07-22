@@ -3,41 +3,37 @@ import Image from 'next/image'
 // change info about project
 //
 
-import KanbanExample from '../public/kanban-example.jpg'
+import KanbanExample from '../../public/kanban-example.jpg'
 
 const KanbanProject = () => {
   return (
     <div className='kanban card grid gap'>
-      <div className='polaroid-frame'>
-        <div className='polaroid-frame--shadow-inside'></div>
-        <div className='polaroid-frame--work-in-progress'>
-          <div className='line-wrapper'>
-            <div className='moving-text first' aria-hidden='true'>
-              work in progress
-            </div>
-            <div className='moving-text second' aria-hidden='true'>
-              work in progress
-            </div>
-            <div className='moving-text third' aria-hidden='true'>
-              work in progress
+      <div className='photo-and-button-wrapper'>
+        <div className='card__photo-wrapper'>
+          <div className='line-work-in-progress'>
+            <div className='line-wrapper'>
+              <div className='moving-text first' aria-hidden='true'>
+                work in progress
+              </div>
+              <div className='moving-text second' aria-hidden='true'>
+                work in progress
+              </div>
+              <div className='moving-text third' aria-hidden='true'>
+                work in progress
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className='card__photo-wrapper'>
           <Image
             src={KanbanExample}
             className='card__photo'
             placeholder='blur'
-            layout='intrinsic'
+            layout='responsive'
             alt='Kanban desk website example'
-            objectFit='cover'
-            objectPosition='left top'
           />
         </div>
-        <h3 className='card__title'>Kanban desk website</h3>
       </div>
-      <div className='card__description text-max-length flow-spacer spacer-xs'>
+      <div className='card__description flow-spacer spacer-xs'>
+        <h3 className='card__title'>Kanban desk website</h3>
         <p>
           This is my current project - Kanban task management website - that
           will help me reinforce my JS and CSS knowledge, state management, use

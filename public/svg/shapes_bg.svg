@@ -1,0 +1,50 @@
+<svg viewBox='0 0 600 900' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="sun" viewBox="0 0 24 24">
+<path d="M10.499.471c.893-.628 2.108-.628 3.002 0 2.142 1.506 1.682 1.362 4.335 1.354 1.108-.004 2.091.682 2.429 1.696.813 2.427.527 2.052 2.679 3.544.899.623 1.275 1.733.928 2.744-.826 2.417-.83 1.953 0 4.381.347 1.011-.029 2.121-.928 2.744-2.151 1.492-1.866 1.117-2.679 3.544-.338 1.014-1.321 1.7-2.429 1.697-2.654-.009-2.193-.153-4.335 1.353-.894.629-2.109.629-3.002 0-2.143-1.505-1.682-1.363-4.335-1.353-1.108.003-2.091-.683-2.429-1.697-.812-2.43-.533-2.054-2.68-3.544-.898-.623-1.274-1.733-.927-2.744.827-2.418.83-1.953 0-4.381-.347-1.011.029-2.121.927-2.744 2.146-1.489 1.867-1.112 2.68-3.544.338-1.014 1.321-1.7 2.429-1.696 2.646.008 2.18.161 4.335-1.354"/>
+</symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="triangle" viewBox="0 0 24 24">
+<path d="m2.095 19.882 9.248-16.5c.133-.237.384-.384.657-.384.272 0 .524.147.656.384l9.248 16.5c.064.115.096.241.096.367 0 .385-.309.749-.752.749h-18.496c-.44 0-.752-.36-.752-.749 0-.126.031-.252.095-.367z" fill-rule="nonzero"/></symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="hexagon" viewBox="0 0 24 24">
+<path d="m16.476 3c.369 0 .709.197.887.514.9 1.595 3.633 6.445 4.509 8.001.075.131.118.276.126.423.012.187-.029.377-.126.547-.876 1.556-3.609 6.406-4.509 8-.178.318-.518.515-.887.515h-8.951c-.369 0-.709-.197-.887-.515-.899-1.594-3.634-6.444-4.51-8-.085-.151-.128-.318-.128-.485s.043-.334.128-.485c.876-1.556 3.611-6.406 4.51-8.001.178-.317.518-.514.887-.514z" fill-rule="nonzero"/>
+</symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="circle" viewBox="0 0 24 24">
+<circle cx="11.998" cy="11.998" fill-rule="nonzero" r="9.998"/>
+</symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="square" viewBox="0 0 24 24">
+<path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1z" fill-rule="nonzero"/></symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="octagon" viewBox="0 0 24 24">
+<path d="m22.005 15.728c0 .266-.106.52-.293.707-1 1-4.272 4.272-5.272 5.272-.187.188-.442.293-.707.293-1.414 0-6.042 0-7.457 0-.265 0-.519-.105-.707-.293-1-1-4.271-4.272-5.271-5.272-.188-.187-.293-.441-.293-.707 0-1.414 0-6.042 0-7.456 0-.266.105-.52.293-.707 1-1 4.271-4.272 5.271-5.272.188-.188.442-.293.707-.293h7.457c.265 0 .52.105.707.293 1 1 4.272 4.272 5.272 5.272.187.187.293.441.293.707z" fill-rule="nonzero"/></symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="pentagon" viewBox="0 0 24 24">
+<path d="m11.467 3.183c.175-.122.38-.183.584-.183.206 0 .413.063.589.186 1.778 1.252 7.104 4.997 8.93 6.282.274.194.43.505.43.826 0 .11-.018.221-.056.329-.697 2.016-2.668 7.718-3.351 9.693-.142.41-.53.684-.965.684h-11.153c-.432 0-.818-.27-.962-.674-.7-1.964-2.732-7.667-3.454-9.694-.04-.111-.059-.225-.059-.338 0-.324.157-.636.435-.829 1.853-1.289 7.239-5.035 9.032-6.282z" fill-rule="nonzero"/></symbol>
+<symbol clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" id="rhombus" viewBox="0 0 24 24">
+<path d="m11.262 2.306c.196-.196.461-.306.738-.306s.542.11.738.306c1.917 1.917 7.039 7.039 8.956 8.956.196.196.306.461.306.738s-.11.542-.306.738c-1.917 1.917-7.039 7.039-8.956 8.956-.196.196-.461.306-.738.306s-.542-.11-.738-.306c-1.917-1.917-7.039-7.039-8.956-8.956-.196-.196-.306-.461-.306-.738s.11-.542.306-.738c1.917-1.917 7.039-7.039 8.956-8.956z" fill-rule="nonzero"/>
+</symbol>
+
+<filter id="filter-blur">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+  </filter>
+
+<g width='600' height='900' viewBox='0 0 600 900' id='background-with-shapes' fill='none' stroke='currentColor' filter='url(#filter-blur)'>
+    <use href="#triangle" x='10' y='10' width='48' height='48'></use>
+    <use href="#triangle" x='200' y='700' width='100' height='100'></use>
+    <use href="#triangle" x='100' y='100' width='130' height='130'></use>
+    <use href="#hexagon" x='200' y='100' width='80' height='80'></use>
+    <use href="#hexagon" x='350' y='600' width='50' height='50'></use>
+    <use href="#hexagon" x='400' y='200' width='150' height='150'></use>
+    <use href="#circle" x='50' y='500' width='48' height='48'></use>
+    <use href="#circle" x='500' y='50' width='70' height='70'></use>
+    <use href="#circle" x='300' y='350' width='170' height='170'></use>
+    <use href="#rhombus" x='40' y='400' width='48' height='48'></use>
+    <use href="#rhombus" x='400' y='800' width='85' height='85'></use>
+    <use href="#rhombus" x='400' y='40' width='110' height='110'></use>
+    <use href="#square" x='300' y='130' width='48' height='48'></use>
+    <use href="#square" x='80' y='300' width='130' height='130'></use>
+    <use href="#square" x='150' y='500' width='150' height='150'></use>
+    <use href="#pentagon" x='450' y='530' width='48' height='48'></use>
+    <use href="#pentagon" x='20' y='700' width='180' height='180'></use>
+    <use href="#pentagon" x='250' y='250' width='70' height='70'></use>
+    <use href="#octagon" x='230' y='30' width='48' height='48'></use>
+    <use href="#octagon" x='400' y='580' width='180' height='180'></use>
+    <use href="#octagon" x='500' y='370' width='100' height='100'></use>
+ </g>
+</svg>

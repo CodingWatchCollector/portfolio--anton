@@ -7,20 +7,17 @@ const ChezMmanProject = () => {
 
   return (
     <div className='chez-mman card grid gap'>
-      <div className='polaroid-frame '>
-        <div className='polaroid-frame--shadow-inside'></div>
+      <div className='photo-and-button-wrapper'>
         <div className='card__photo-wrapper'>
           <ChezMmanImage darkMode={darkMode} />
         </div>
-        <h3 className='card__title'>
-          Chez M&apos;man Mobile Menu{' '}
-          <SwitchButtonWithBear
-            toggleState={darkMode}
-            setToggleState={setDarkMode}
-          />
-        </h3>
+        <SwitchButtonWithBear
+          toggleState={darkMode}
+          setToggleState={setDarkMode}
+        />
       </div>
-      <div className='card__description text-max-length flow-spacer spacer-xs'>
+      <div className='card__description flow-spacer spacer-xs'>
+        <h3 className='card__title'>Chez M&apos;man Mobile Menu </h3>
         <p>
           This is a web page I&apos;ve made for the restaurant where I work.
           It&apos;s a lightweight website with the menu and drink list and is
