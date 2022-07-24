@@ -25,7 +25,7 @@ const AboutMe = () => {
           <span>
             I have been passionate about web development for the last 5 years,
             but I could not find enough time to learn it properly until Covid
-            containment when I could set aside my waitor&apos;s job and rush the
+            containment when I could set aside my waiter&apos;s job and rush the
             FreeCodeCamp site to learn Frontend and Backend (HTML, CSS,
             JavaScript, a bit of Python, basic QA and data visualisation).
           </span>
@@ -34,14 +34,14 @@ const AboutMe = () => {
             courses and lots of blogs reading and conference talks).
           </span>
           <span>
-            Now I want to fill in the gaps in my knowledge (self-taught learning
-            lacks consistency) but I also have an eagerness to learn more about
-            subjects I&apos;ve never went deep enough, e.g. data security, TDD,
-            advanced use of databases, eco-design... I also want to improve my
-            softskills and I want to learn more about Agile, Scrum, how to
-            organise the teamwork withing dev team, how to write comprehensive
-            code and everything else mentioned in the podcasts, blogs, tweets
-            and books I&apos;ve read and heard.
+            Now I want to implement my knowledge in real projects but I also
+            have an eagerness to learn more about subjects I&apos;ve never went
+            deep enough, e.g. data security, TDD, advanced use of databases,
+            eco-design... I also want to improve my soft skills and I want to
+            learn more about Agile, Scrum, how to organise the teamwork within
+            dev team, how to write comprehensive code and everything else
+            mentioned in the podcasts, blogs, tweets and books I&apos;ve read
+            and heard.
           </span>
         </div>
       </div>
