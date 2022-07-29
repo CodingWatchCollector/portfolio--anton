@@ -55,7 +55,7 @@ const KanbanProject = () => {
             target='_blank'
             rel='noreferrer'
           >
-            View current progress
+            GitHub repository
             <span className='visually-hidden'>
               of my Kanban task management website
             </span>
