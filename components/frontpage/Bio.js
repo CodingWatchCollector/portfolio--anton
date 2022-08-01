@@ -34,7 +34,7 @@ const Bio = () => {
       </p>
       <p className='bio__linkedin'>
         socialAccount:{' '}
-        <a href='www.linkedin.com/in/anton-begunenko'>linkedIn</a>
+        <a href='https://www.linkedin.com/in/anton-begunenko'>linkedIn</a>
       </p>
     </div>
   )
