@@ -32,7 +32,7 @@ const RandomFacts = () => {
             />
             <div className='solar-system'>
               <div className='sun-wrapper'>
-                <svg width={66} height={66} className='sun'>
+                <svg width={66} height={66} className='sun' aria-hidden='true'>
                   <use width={66} height={66} href='/svg/icons.svg#sun' />
                 </svg>
               </div>

@@ -7,7 +7,9 @@ const Frontpage = () => {
     <>
       <article className='frontpage flow-spacer'>
         <div className='header-portrait-wrapper content--max-width'>
-          <h2 className='text-highlight'>Hero *_*</h2>
+          <h2 className='text-highlight'>
+            Hero <span aria-hidden='true'>*_*</span>
+          </h2>
         </div>
         <div className='hero-wrapper flow-spacer'>
           <AboutMe />

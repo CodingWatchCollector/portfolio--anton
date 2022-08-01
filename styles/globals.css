@@ -794,6 +794,12 @@ input[class^='fact-radio']:checked + svg {
   content: '\2212';
 }
 
+@media speech {
+  .card details summary::before {
+    visibility: none;
+  }
+}
+
 .card details .expandable li {
   list-style: circle inside;
 }
