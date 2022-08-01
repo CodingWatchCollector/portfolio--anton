@@ -20,17 +20,21 @@ const Bio = () => {
         <span className='cursive'>{age}</span>
       </p>
       <p className='bio__github'>
-        githubLink:{' '}
+        myGithub:{' '}
         <a href='https://github.com/CodingWatchCollector'>
           {' '}
           CodingWatchCollector
         </a>
       </p>
       <p className='bio__email-me'>
-        Email me:{' '}
+        emailMe:{' '}
         <a href='mailto:a.d.begun@gmail.com?subject=Emploi%20en%20alternance&body=Bonjour,%20on%20est%20intéressé%20par%20votre%20profil!'>
           a.d.begun@gmail.com
         </a>
+      </p>
+      <p className='bio__linkedin'>
+        socialAccount:{' '}
+        <a href='www.linkedin.com/in/anton-begunenko'>linkedIn</a>
       </p>
     </div>
   )
