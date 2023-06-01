@@ -1,6 +1,7 @@
+import { Rentawilder } from './projects/Rentawilder'
+import { Riverse } from './projects/Riverse'
 import AbletonProject from './projects/Ableton-project'
 import ChezMmanProject from './projects/ChezMman-project'
-import KanbanProject from './projects/Kanban-project'
 
 const Projects = () => {
   return (
@@ -9,9 +10,10 @@ const Projects = () => {
         <h2 className='text-highlight'>My projects/work</h2>
       </div>
       <div className='cards-wrapper flow-spacer spacer-xl'>
+        <Riverse />
+        <Rentawilder />
         <AbletonProject />
         <ChezMmanProject />
-        <KanbanProject />
       </div>
     </article>
   )

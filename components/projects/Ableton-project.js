@@ -12,7 +12,6 @@ const AbletonProject = () => {
             className='card__photo'
             placeholder='blur'
             layout='responsive'
-            priority
             alt='Ableton about page preview'
           />
         </div>
@@ -21,8 +20,12 @@ const AbletonProject = () => {
       <div className='card__description flow-spacer spacer-xs'>
         <h3 className='card__title'>Ableton about page</h3>
         <p>
-          This is a copy of Ableton&apos;s about page using only HTML, CSS and
-          vanilla JS.
+          Sometimes you don’t need full React app to make a nice looking
+          functional page. HTML, CSS and 10 lines of JS (for mobile nav) are
+          enough and it leaves more time to care about HTML structure and
+          accessibility.
+        </p>
+        <div>
           <a
             className='link--block'
             href='https://www.ableton.com/en/about/'
@@ -50,37 +53,24 @@ const AbletonProject = () => {
             View
             <span className='visually-hidden'>Ableton project</span> on Github
           </a>
-        </p>
-        <details className='flow-spacer spacer-xs'>
-          <summary className='button-style'>
-            Details
-            <span className='visually-hidden'>on Ableton project</span>
-          </summary>
-          <div className='expandable flow-spacer spacer-xs'>
-            <ul className='expandable__list'>
-              <h4>Main reasons to copy this page:</h4>
-              <li>Solidify my CSS Grid knowledge</li>
-              <li>Build a complex page using WCAG recommendations</li>
-              <li>I like the design and I wanted to recreate it</li>
-            </ul>
-            <ul className='expandable__list'>
-              <h4>My personal touch and some fixes of the original page:</h4>
-              <li>
-                Fix heading hierarchy of the original page where every section
-                has a H1(what?!)
-              </li>
-              <li>
-                Skip to content button (10+ tabs before you skip the navigation
-                links)
-              </li>
-              <li>
-                Hover state on links (doesn&apos;t exist on original page)
-              </li>
-              <li>Added alt text to images</li>
-              <li>Bumped up the outline on focus</li>
-            </ul>
-          </div>
-        </details>
+        </div>
+
+        <div className='expandable flow-spacer spacer-xs'>
+          <ul className='expandable__list'>
+            <h4>My personal touch and some fixes of the original page:</h4>
+            <li>
+              Fix heading hierarchy of the original page where every section has
+              a H1(what?)
+            </li>
+            <li>
+              Skip to content button (10+ tabs before you skip the navigation
+              links)
+            </li>
+            <li>Hover state on links (doesn&apos;t exist on original page)</li>
+            <li>Added alt text to images</li>
+            <li>Bumped up the outline on focus</li>
+          </ul>
+        </div>
       </div>
     </div>
   )

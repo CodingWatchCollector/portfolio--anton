@@ -1,6 +1,5 @@
 import AboutMe from './frontpage/AboutMe'
 import Bio from './frontpage/Bio'
-import RandomFacts from './frontpage/RandomFacts'
 
 const Frontpage = () => {
   return (
@@ -14,7 +13,6 @@ const Frontpage = () => {
         <div className='hero-wrapper flow-spacer'>
           <AboutMe />
           <Bio />
-          <RandomFacts />
         </div>
       </article>
     </>

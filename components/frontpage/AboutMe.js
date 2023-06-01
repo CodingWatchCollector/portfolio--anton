@@ -23,25 +23,35 @@ const AboutMe = () => {
         </div>
         <div className='about-me--primary__text content--max-width'>
           <span>
-            I have been passionate about web development for the last 5 years,
-            but I could not find enough time to learn it properly until Covid
-            containment when I could set aside my waiter&apos;s job and rush the
-            FreeCodeCamp site to learn Frontend and Backend (HTML, CSS,
-            JavaScript, a bit of Python, basic QA and data visualisation).
+            I&apos;m Anton, a passionate self-taught web developer with a focus
+            on accessibility and inclusivity. For the past three years,
+            I&apos;ve been immersed in the world of web development, constantly
+            learning and growing.
           </span>
           <span>
-            My learning path continues with advanced CSS and accessibility (some
-            courses and lots of blogs reading and conference talks).
+            Working primarily with TypeScript, React, and CSS, I&apos;ve honed
+            my skills in front-end development. I kickstarted my career by
+            building an online menu for a restaurant using React and CMS.
           </span>
           <span>
-            Now I want to implement my knowledge in real projects but I also
-            have an eagerness to learn more about subjects I&apos;ve never went
-            deep enough, e.g. data security, TDD, advanced use of databases,
-            eco-design... I also want to improve my soft skills and I want to
-            learn more about Agile, Scrum, how to organise the teamwork within
-            dev team, how to write comprehensive code and everything else
-            mentioned in the podcasts, blogs, tweets and books I&apos;ve read
-            and heard.
+            Currently, I&apos;m completing an internship at Riverse, a
+            green-tech start-up where I have been responsible for almost the
+            entire front-end development of their carbon credit sales platform.
+            I&apos;ve used TypeScript, Next.js, and TailwindCSS, conducted
+            usability and accessibility tests, and made contributions to the
+            back-end.
+          </span>
+          <span>
+            To expand my skills, I&apos;m pursuing the Professional Data
+            Engineer Certification program by Google to gain expertise in
+            back-end development and data engineering.
+          </span>
+          <span>
+            I am committed to making a positive impact on the world and the web.
+            Inclusivity and environmental sustainability are of great importance
+            to me. I am enthusiastic about collaborating on projects that
+            prioritize accessibility and contribute to a brighter and more
+            sustainable future.
           </span>
         </div>
       </div>

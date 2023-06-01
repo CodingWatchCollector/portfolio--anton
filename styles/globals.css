@@ -757,16 +757,15 @@ input[class^='fact-radio']:checked + svg {
 .card__photo-wrapper {
   position: relative;
 
-  min-width: 15rem;
+  min-width: 18rem;
   width: 100%;
   min-height: 15rem;
   max-height: min(70vh, 40rem);
 
-  overflow: auto;
+  overflow: hidden;
 
   box-shadow: 0.1em 0.2em 0.3em hsl(var(--clr-w-to-b--500) / 0.2);
 }
-
 @media (min-width: 40em) {
   .card {
     grid-template-columns: minmax(15rem, min(30rem, 40%)) minmax(50%, 1fr);
@@ -776,7 +775,6 @@ input[class^='fact-radio']:checked + svg {
   .card__description,
   .card__photo-wrapper {
     max-height: min(80vh, 40rem);
-    overflow: auto;
     position: relative;
   }
 }
@@ -963,10 +961,6 @@ input[class^='fact-radio']:checked + svg {
 
 /* Kanban project */
 
-.kanban .card__photo-wrapper {
-  position: relative;
-}
-
 .line-work-in-progress {
   position: absolute;
   inset: 0;
@@ -1031,4 +1025,13 @@ input[class^='fact-radio']:checked + svg {
   .moving-text.third {
     animation-delay: 0s;
   }
+}
+
+/* Riverse project */
+.bg-riverse {
+  background-color: #ebf1ff;
+}
+
+.pixelated {
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='1' y='1' height='1' width='1'/%3E%3CfeComposite width='12' height='12'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
 }
